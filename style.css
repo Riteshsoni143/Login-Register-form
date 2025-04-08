@@ -1,0 +1,224 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none ;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    height:30px;
+    width:100%;
+    background: transparent;
+    backdrop-filter:blur(5px);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+    font-weight:600;
+}
+
+.header a{
+    color: white;
+    padding-right: 10px;
+}
+
+.header a:hover{
+    text-decoration:underline;
+    color:black;
+}
+
+.header .btn_login_popup{
+    height:30px;
+    border:2px solid white;
+    border-radius:20px;
+    background:none;
+    color:white;
+    font-size:20px;
+    font-weight:600;
+    padding:0 15px;
+    margin-right:20px;
+    cursor:pointer;
+}
+
+.header .btn_login_popup:hover{
+    background:white;
+    color:black;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;;
+    min-height:100vh;
+    background:url("luca-bravo-ii5JY_46xH0-unsplash.jpg") no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.card{
+    display:flex;
+    border-radius:15px;
+    border:1px solid white;
+    background:transparent;
+    backdrop-filter:blur(10px);
+    position:absolute;
+    overflow:hidden;
+    padding:30px 25px;
+    padding-bottom:40px
+}
+
+.card .close_icon{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:30px;
+    background:black;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom-left-radius:10px;;
+}
+
+.card .close_icon:hover{
+    color:black;
+    background:white;
+}
+
+.card h1{
+    font-size:40px;
+    text-align:center;
+}
+
+
+.card .input_box input{
+    height:35px;
+    width:100%;
+    border:2px solid black;
+    border-radius:30px;
+    background:transparent;
+    font-size:15px;
+    margin-top:15px;
+    padding-left:10px;
+}
+
+.card .input_box input::placeholder{
+    color:white;
+    font-size:15px;
+    font-weight:600;
+}
+
+.card .input_box .icon{
+    position:absolute;
+    right:5px;
+    margin-top:24px;
+    font-size:20px;
+}
+
+.card #register_card .input_box .icon{
+    position:absolute;
+    right:25px;
+}
+
+.card .remember_forgot{
+    display:flex;
+    justify-content:space-between;
+    font-size:18px;
+    font-weight:600;
+    margin-top:10px;
+}
+
+.card .remember_forgot label input{
+    accent-color:black;
+}
+
+.card .remember_forgot .forgot{
+    color:black;
+    padding-left:10px;
+}
+
+.card .remember_forgot .forgot:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+.card .btn{
+    width:100%;
+    height:35px;
+    border:none;
+    border-radius:20px;
+    margin-top:20px;
+    font-size:20px;
+    font-weight:600;
+    box-shadow:0 0 5px black;
+    cursor:pointer;
+}
+
+.card .btn:hover{
+    background:black;
+    color:white;
+    border:2px solid white;
+    box-shadow:0 0 10px white;
+}
+
+.card #register_link{
+    font-size:18px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    color:black;
+    margin-top:10px;
+}
+
+.card .register_link{
+    font-size:18px;
+    color:black;
+    font-weight:600;
+    margin-left:5px;
+    background:none;
+    border:none;
+}
+
+.card .register_link:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+.card .remember {
+    font-size:20px;
+    padding-top:10px;
+}
+
+.card .remember input{
+    accent-color:black;
+}
+
+.card #login_link{
+    font-size:18px;
+    display:flex;
+    justify-content:center;
+    color:black;
+    font-weight:600;
+    margin-top:10px;
+}
+
+.card .login_link{
+    color:black;
+    margin-left:5px;
+}
+
+.card .login_link:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+.card .form_box.login{
+    position:absolute;
+    transform:translateX(-400px);
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <a >Home</a>
+            <a >About</a>
+            <a >Service</a>
+            <a href="https://wa.link/9h3tcb">Contact Us on whatsapp</a>
+            <a href="mailto:riteshsoni35468@gmail.com">Email</a>
+        </div>
+
+        <div>
+            <button class="btn_login_popup" onclick="showLoginCard()">Login</button>
+        </div>
+    </div>
+
+
+    <div class="card" id="myElement">
+        <div>
+            <span class="close_icon" onclick="hideCard()"> <ion-icon name="close-outline"></ion-icon> </span>
+        </div>
+      
+        <div class="form_box login" id="login_card">
+            <h1>Login</h1>
+
+            <form action="https://codeyogi.io/save" method="POST">
+                <div class="input_box"> 
+                    <span class="icon"> <ion-icon name="person-outline"></ion-icon> </span>
+                    <input type="tel" placeholder=" Mobile number" minlength="10" maxlength="10" required>
+                </div>
+                
+                <div class="input_box">
+                    <span class="icon"> <ion-icon name="lock-closed-outline"></ion-icon> </span>
+                    <input type="password" placeholder=" Password" minlength="8" maxlength="12" required>  
+                </div>
+            
+                <div class="remember_forgot">
+                    <label>
+                        <input type="checkbox" required>
+                        Remember me
+                    </label>
+
+                    <a class="forgot">Forgot Password?</a>
+                </div>
+               
+        
+                <button type="submit" class="btn">
+                    Login
+                </button>
+        
+                <div id="register_link">
+                   <p>
+                      Dont have an Account?
+                      <a href="" class="register_link" onclick="showRegisterCard()"> Register </a>
+                   </p>
+                </div>
+            </form>
+        </div>
+
+
+        
+        <div class="form_box register" id="register_card">
+            <h1>Register</h1>
+            
+            <form action="" method="POST">   
+            <input type="hidden" name="access_key" value="bca71ee4-8221-4f20-a52f-798f99f64b27">
+
+            <div class="input_box">
+                <span class="icon"> <ion-icon name="person-outline"><ion-icon> </span>
+                <input type="text" placeholder="User Name" name="User Name" minlength="8"  maxlength="14" required>  
+            </div>  
+
+            
+            <div class="input_box">
+                <span class="icon"> <ion-icon name="person-outline"><ion-icon> </span>
+                <input type="tel" placeholder="Mobile Number" name="mobile number" minlength="10"  maxlength="10" required>  
+            </div> 
+            
+            
+            <div class="input_box">
+                <span class="icon"> <ion-icon name="lock-closed-outline"></ion-icon> </span>               
+                <input type="password" placeholder="password" name="password" length="10"" minlength="8" maxlength="12" required>
+            </div>
+            
+            
+            <div class="remember">
+                <label>
+                    <input type="checkbox" required>
+                    I agree to the terms & conditions
+                </label>
+            </div>  
+            
+            
+            <button type="submit" class="btn">
+                    Login
+            </button>   
+            
+            <div id="login_link">
+                <p>
+                    Already have an account? 
+                    <a href="#" class="login_link" onclick="showLoginCard()"> Login </a>
+                </p>
+            </div>
+            </form>
+            </div>
+    </div>
+
+
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>       
+</body>
+</html>
