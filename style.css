@@ -4,6 +4,7 @@
     text-decoration:none ;
 }
 
+/* header */
 .header{
     position:fixed;
     top:0;
@@ -57,6 +58,7 @@ body{
     background-position:center;
 }
 
+/* card */
 .card{
     display:flex;
     border-radius:15px;
@@ -222,3 +224,13 @@ body{
     transform:translateX(-400px);
 }
 
+@media(max-width:640px) {
+   .header a{
+    display:none;
+   }
+
+   .card{
+    width:250px;
+   }
+
+}
