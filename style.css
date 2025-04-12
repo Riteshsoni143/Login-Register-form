@@ -242,8 +242,7 @@ body{
     }
 
     .card #login_link{
-        font-size:17px;
-      
+        font-size:17px; 
     }
 
     .card #login_card .input_box{
@@ -270,5 +269,49 @@ body{
     .card .remember_forgot{
         font-size:16px;
         font-weight:600;
+    }
+}
+
+@media(max-width:350px) {
+    .card{
+        width:200px;
+    }
+
+    .card .remember{
+        font-size:13px;
+    }
+
+    .card #login_link{
+        font-size:13px; 
+    }
+
+    .card #login_card .input_box{
+        width:190px;
+    }
+
+    .card #login_card .input_box .icon{
+        right:60px;
+    }
+
+    .card #login_card .btn{
+        width:200px;
+    }
+
+    .card #register_link{
+        font-size:13px;
+        padding-right:30px;
+    }
+
+    .card #register_link a{
+        font-size:13px;
+    }
+
+    .card .remember_forgot{
+        font-size:13px;
+    }
+
+    .card .remember_forgot .forgot{
+        padding-right:13px;
+        padding-top:1px;
     }
 }
