@@ -14,7 +14,7 @@ function showLoginCard() {
     let registerCard = document.getElementById("register_card");
     registerCard.style.transform = "translateX(400px)";
 
-    card.style.height = "270px";
+    card.style.height = "290px";
 }
 
 
@@ -28,5 +28,5 @@ function showRegisterCard() {
     let loginCard = document.getElementById("login_card");
     loginCard.style.transform = "translateX(-400px)"
 
-    card.style.height = "325px";
+    card.style.height = "335px";
 }
