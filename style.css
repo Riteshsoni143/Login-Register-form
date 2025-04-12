@@ -238,10 +238,12 @@ body{
 
     .card .remember{
         font-size:17px;
+        padding-left:8px;
     }
 
     .card #login_link{
         font-size:17px;
+      
     }
 
     .card #login_card .input_box{
@@ -258,7 +260,7 @@ body{
 
     .card #register_link{
         font-size:17px;
-        padding-right:20px;
+        padding-left:3px;
     }
 
     .card #register_link a{
