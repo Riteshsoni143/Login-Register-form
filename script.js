@@ -5,8 +5,9 @@ function hideCard() {
 
 
 function showLoginCard() {
+  
     let card = document.getElementById("myElement");
-    card.style.display = "block";
+    card.style.display = "flex";
 
     let loginCard = document.getElementById("login_card");
     loginCard.style.transform = "translateX(0px)"
@@ -19,8 +20,8 @@ function showLoginCard() {
 
 
 function showRegisterCard() {
-    let card = document.getElementById("myElement");
-    card.style.display = "block";
+    // let card = document.getElementById("myElement");
+    // card.style.display = "flex";
 
     let registerCard = document.getElementById("register_card");
     registerCard.style.transform = "translateX(0px)";
