@@ -48,15 +48,29 @@
 }
 
 body{
-    min-height:100vh;
+    height:100vh;
     display:flex;
+    flex-direction:column;
     align-items:center;
     justify-content:center;
     background:url(luca-bravo-ii5JY_46xH0-unsplash.jpg);
+
     background-size:cover;
     background-position:center;
 }
 
+.main{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.home{
+    height:100vh;
+    display:flex;
+    align-items:center;
+}
 
 .card{
     height:340px;
