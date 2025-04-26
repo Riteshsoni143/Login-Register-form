@@ -265,7 +265,25 @@ body{
     .footer .social-links a{
         font-size:15px;
     }
+
+    .about-details{
+        width:300px;
+    }
+
+    .about h1{
+        font-size:45px;
+    }
+
+    .about-details h2{
+        font-size:30px;
+    }
+
+    .about-details p, li{
+        font-size:20px;
+    }
 }
+
+
 
 @media(max-width:600px) {
     .header a{
@@ -276,3 +294,6 @@ body{
 .home{
     display:none;
 }
+
+
+
