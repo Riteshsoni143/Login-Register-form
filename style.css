@@ -47,8 +47,10 @@
 
 /* footer */
 .footer{
+    height:30px;
     display:flex;
     justify-content:space-between;
+    align-items:center;
     position:fixed;
     bottom:0;
     left:0;
@@ -69,14 +71,12 @@
 
 .footer .social-links a:hover{
     text-decoration:underline;
+    color:rgb(32, 134, 207);
 }
 
 body{
     height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    width:100%;
     background:url(luca-bravo-ii5JY_46xH0-unsplash.jpg);
     background-size:cover;
     background-position:center;
@@ -85,6 +85,7 @@ body{
 .main{
     display:flex;
     flex-direction:column;
+    align-items:center;
     justify-content:center;
 }
 
@@ -229,8 +230,52 @@ body{
     color:white;
 }
 
+/* about */
+.about{
+    height:100vh;
+    width:250px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-details{
+    backdrop-filter:blur(10px);
+    border:1px solid black;
+    border-radius:10px;
+    padding:10px;
+    margin-top:10px;
+}
+
+.about h1{
+    font-size:35px;
+}
+
+.about-details h2{
+    font-size:25px;
+}
+
+.about-details p, li{
+    font-size:17px;
+}
+
+.about-details li{
+    padding-bottom:5px;
+}
+
+@media(min-width:360px) {
+    .footer .social-links a{
+        font-size:15px;
+    }
+}
+
 @media(max-width:600px) {
     .header a{
         display:none;
     }
+}
+
+.home{
+    display:none;
 }
