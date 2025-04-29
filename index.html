@@ -10,20 +10,20 @@
 <body>
     <div class="header">
         <div>
-            <a >Home</a>
-            <a >About</a>
+            <a onclick="showHome()">Home</a>
+            <a onclick="showAbout()">About</a>
             <a >Service</a>
-            <a href="#">Contact Us</a>
+            <a onclick="showContactUs()">Contact Us</a>
             <a href="mailto:riteshsoni35468@gmail.com">Email</a>
         </div>
 
-        <div>
+        <div id="header-login-btn">
             <button class="btn_login_popup" onclick="showLoginCard()">Login</button>
         </div>
     </div>
 
     <div class="main">  
-        <div class="home">
+        <div class="home" id="home">
         <div class="card" id="myElement">
             <div>
                 <span class="close_icon" onclick="hideCard()"> <ion-icon name="close-outline"></ion-icon> </span>
@@ -114,7 +114,7 @@
         </div>
         </div> 
 
-        <div class="about">
+        <div class="about" id="about">
             <h1>About Me</h1>
             <div class="about-details">
                 <h2>Personal details:</h2>
@@ -126,7 +126,7 @@
             </div>
         </div>
 
-        <div class="contact">
+        <div class="contact" id="contact">
             <h1>contact</h1>
 
             <form action="https://api.web3forms.com/submit" method="POST">
