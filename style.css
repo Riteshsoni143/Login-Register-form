@@ -261,6 +261,63 @@ body{
     padding-bottom:10px;
 }
 
+/* contact */
+.contact{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+   
+}
+
+.contact h1{
+    font-size:45px;
+}
+
+.contact form input, textarea{
+    width:250px;
+    height:35px;
+    padding:5px;
+    font-size:20px;
+    color:black;
+    margin-top:10px;
+}
+
+.contact form input::placeholder{
+    color:black;
+}
+
+.contact form textarea::placeholder{
+    color:black;
+}
+
+.contact form textarea{
+   height:130px;
+}
+
+.contact .contact-btn{
+    height:45px;
+    font-size:25px;
+    font-weight:600;
+    width:130px;
+    border:none;
+    border-radius:20px;
+    margin-top:15px;
+    background:black;
+    color:white;
+}
+
+.contact .contact-btn:hover{
+    background:white;
+    color:black;
+}
+
 @media(min-width:360px) {
     .footer .social-links a{
         font-size:15px;
@@ -283,6 +340,24 @@ body{
     }
 }
 
+@media(min-width:500px) {
+    .about-details{
+        width:400px;
+    }
+
+    .about h1{
+        font-size:55px;
+    }
+
+    .about-details h2{
+        font-size:35px;
+    }
+
+    .about-details p, li{
+        font-size:20px;
+    }
+}
+
 
 
 @media(max-width:600px) {
@@ -291,9 +366,9 @@ body{
     }
 }
 
-.home{
+/* .home, .about{
     display:none;
-}
+} */
 
 
 
