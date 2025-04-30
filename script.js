@@ -5,7 +5,6 @@ function hideCard() {
 
 
 function showLoginCard() {
-  
     let card = document.getElementById("myElement");
     card.style.display = "flex";
     card.style.height = "310px";
@@ -20,16 +19,13 @@ function showLoginCard() {
 
 function showRegisterCard() {
     let card = document.getElementById("myElement");
-    // card.style.display = "flex";
-
+    card.style.height = "340px";
 
     let registerCard = document.getElementById("register_card");
     registerCard.style.transform = "translateX(0px)";
 
     let loginCard = document.getElementById("login_card");
     loginCard.style.transform = "translateX(-400px)"
-
-    card.style.height = "335px";
 }
 
 
