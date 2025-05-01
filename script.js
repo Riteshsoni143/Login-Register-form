@@ -48,9 +48,19 @@ function showAbout() {
     headerLoginBtn.style.display="none";
 }
 
-function showContactUs() {
+function showContact() {
     contact.style.display= "flex";
     home.style.display="none";
     about.style.display="none";
     headerLoginBtn.style.display="none";
+}
+
+function openSidebar() {
+    let sidebar = document.getElementById("sidebar-menu");
+    sidebar.style.display = "flex";
+}
+
+function closeSidebar() {
+    let sidebar = document.getElementById("sidebar-menu");
+    sidebar.style.display = "none";
 }

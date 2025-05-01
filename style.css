@@ -13,19 +13,82 @@
     backdrop-filter:blur(20px);
     display: flex;
     justify-content:space-between;
+    align-items:center;
     padding: 10px;
     font-size: 20px;
     font-weight:600;
+    height:25px;
 }
 
-.header a{
+.header .header-links a{
     color: white;
     padding-right: 10px;
+    display:none;
 }
 
-.header a:hover{
+.header .header-links a:hover{
     text-decoration:underline;
     color:black;
+}
+
+.header .menu-icon{
+    position:fixed;
+}
+
+.header .menu-icon a{
+    color:white;
+    font-size:25px;
+}
+
+.header .menu-icon a:hover{
+    color:black;
+}
+
+.header .sidebar-menu a{
+    color:white;
+}
+
+.header .sidebar-menu a:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+.header .sidebar-menu{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:green;
+    width:150px;
+    height:100vh;
+    gap:30px;
+    display:none;
+}
+
+.header .sidebar-menu .close-icon{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.header .sidebar-menu .close-icon button{
+    border:none;
+    background:transparent;
+    position:fixed;
+    top:0;
+    font-size:30px;
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom-left-radius:15px;
+    padding-bottom:5px;
+}
+
+.header .sidebar-menu .close-icon button:hover{
+    background:red;
 }
 
 .header .btn_login_popup{
@@ -366,8 +429,20 @@ form{
 
 
 
-@media(max-width:600px) {
-    .header a{
+@media(min-width:600px) {
+    .header .header-links a{
+        display:inline;
+    }
+
+    .header .menu-icon{
+        display:none;
+    }
+
+    .header .menu-icon{
+        display:none;
+    }
+
+    .header .sidebar-menu{
         display:none;
     }
 }

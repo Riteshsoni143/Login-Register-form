@@ -9,16 +9,32 @@
 
 <body>
     <div class="header">
-        <div>
+        <div class="header-links">
             <a onclick="showHome()">Home</a>
             <a onclick="showAbout()">About</a>
             <a >Service</a>
-            <a onclick="showContactUs()">Contact Us</a>
+            <a onclick="showContact()">Contact</a>
             <a href="mailto:riteshsoni35468@gmail.com">Email</a>
         </div>
 
+        <div class="menu-icon">
+            <a href="#" onclick="openSidebar()">☰</a>
+        </div>
+
+        <div class="sidebar-menu" id="sidebar-menu">
+            <div class="close-icon">
+                <button onclick="closeSidebar()">x</button>
+            </div>
+
+            <a href="#" onclick="showHome(), closeSidebar()">Home</a>
+            <a href="#" onclick="showAbout(), closeSidebar()">About</a>
+            <a href="#" >Service</a>
+            <a href="#" onclick="showContact(), closeSidebar()">Contact</a>
+            <a href="#" href="mailto:riteshsoni35468@gmail.com">Email</a>
+        </div>
+
         <div id="header-login-btn">
-            <button class="btn_login_popup" onclick="showLoginCard()">Login</button>
+            <button class="btn_login_popup" onclick="showLoginCard(), closeSidebar()">Login</button>
         </div>
     </div>
 
