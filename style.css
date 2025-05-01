@@ -380,7 +380,6 @@ form{
     color:black;
 }
 
-
 .about, .contact{
     display:none;
 }
@@ -442,6 +441,33 @@ form{
 }
 
 
+@media(max-height:720px) and (min-width:360px) and (max-width:500px) {
+    .about-details{
+        margin-bottom:20px;
+    }
+
+    .about h1{
+        font-size:40px;
+    }
+
+    .about-details h2{
+        font-size:25px;
+    }
+
+    .about-details p, li{
+       font-size:17px;
+    }
+}
+
+@media(max-height:720px) and (min-width:260px) and (max-width:360px) {
+    .about-details h2{
+        font-size:22px;
+    }
+
+    .about-details p, li{
+        font-size:15px;
+    }
+}
 
 
 
