@@ -20,6 +20,7 @@ function showLoginCard() {
 function showRegisterCard() {
     let card = document.getElementById("myElement");
     card.style.height = "340px";
+    card.style.display = "flex";
 
     let registerCard = document.getElementById("register_card");
     registerCard.style.transform = "translateX(0px)";
