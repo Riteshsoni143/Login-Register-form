@@ -172,7 +172,6 @@ body{
     position:relative;
     padding:15px;
     backdrop-filter:blur(10px);
-    
 }
 
 .form_box.login{
@@ -301,7 +300,6 @@ body{
     flex-direction:column;
     align-items:center;
     justify-content:center;
-  
 }
 
 .about-details{
@@ -438,14 +436,12 @@ form{
         display:none;
     }
 
-    .header .menu-icon{
-        display:none;
-    }
-
     .header .sidebar-menu{
         display:none;
     }
 }
+
+
 
 
 
