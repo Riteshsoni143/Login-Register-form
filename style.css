@@ -115,6 +115,10 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
     backdrop-filter:20px;
     background:black;
     padding:10px;
@@ -404,13 +408,6 @@ form{
 }
 
 @media(min-width:500px) {
-    .footer{
-        position:fixed;
-        bottom:0;
-        left:0;
-        right:0;
-    }
-
     .about-details{
         width:400px;
     }
