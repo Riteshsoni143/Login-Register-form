@@ -177,12 +177,12 @@ body{
 }
 
 .form_box.login{
-    transform:translateX(0px);
+    transform:translateX(-400px);
 }
 
 .form_box.register{
     position:absolute;
-    transform:translateX(400px);
+    transform:translateX(0px);
 }
 
 .card .close_icon{
@@ -327,7 +327,9 @@ body{
 
 /* contact */
 .contact{
-   
+    /* padding:15px;
+    backdrop-filter:blur(10px);
+    border:2px solid black; */
     display:flex;
     flex-direction:column;
     justify-content:center;
