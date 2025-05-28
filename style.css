@@ -60,7 +60,6 @@
     position:absolute;
     top:0px;
     left:0px;
-    z-index:1;
     background:green;
     width:150px;
     height:100vh;
@@ -157,9 +156,6 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    /* background:url(luca-bravo-ii5JY_46xH0-unsplash.jpg);
-    background-size:cover;
-    background-position:center; */
 }
 
 
@@ -330,9 +326,6 @@
 .contact{
     min-height:100vh;
     width:100%;
-    /* padding:15px;
-    backdrop-filter:blur(10px);
-    border:2px solid black; */
     display:flex;
     flex-direction:column;
     justify-content:center;
