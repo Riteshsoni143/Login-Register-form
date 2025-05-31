@@ -1,11 +1,17 @@
 *{
     padding:0;
     margin:0;
+    box-sizing:border-box;
     text-decoration:none ;
 }
 
+html, body{
+    width:100%;
+    height:100%;
+}
+
 /* header */
-.header{
+header{
     position:fixed;
     top:0;
     left:0;
@@ -18,43 +24,43 @@
     padding: 10px;
     font-size: 20px;
     font-weight:600;
-    height:25px;
+    height:50px;
 }
 
-.header .header-links a{
+header .header-links a{
     color: white;
     padding-right: 10px;
     display:none;
 }
 
-.header .header-links a:hover{
+header .header-links a:hover{
     text-decoration:underline;
     color:black;
 }
 
-.header .menu-icon{
+header .menu-icon{
     position:fixed;
 }
 
-.header .menu-icon a{
+header .menu-icon a{
     color:white;
     font-size:25px;
 }
 
-.header .menu-icon a:hover{
+header .menu-icon a:hover{
     color:black;
 }
 
-.header .sidebar-menu a{
+header .sidebar-menu a{
     color:white;
 }
 
-.header .sidebar-menu a:hover{
+header .sidebar-menu a:hover{
     color:black;
     text-decoration:underline;
 }
 
-.header .sidebar-menu{
+header .sidebar-menu{
     display:flex;
     flex-direction:column;
     text-align:center;
@@ -68,12 +74,12 @@
     display:none;
 }
 
-.header .sidebar-menu .close-icon{
+header .sidebar-menu .close-icon{
     display:flex;
     justify-content: flex-end;
 }
 
-.header .sidebar-menu .close-icon button{
+header .sidebar-menu .close-icon button{
     border:none;
     background:transparent;
     position:fixed;
@@ -88,11 +94,11 @@
     padding-bottom:5px;
 }
 
-.header .sidebar-menu .close-icon button:hover{
+header .sidebar-menu .close-icon button:hover{
     background:red;
 }
 
-.header .btn_login_popup{
+header .btn_login_popup{
     height:30px;
     border:2px solid white;
     border-radius:20px;
@@ -104,14 +110,14 @@
     cursor:pointer;
 }
 
-.header .btn_login_popup:hover{
+header .btn_login_popup:hover{
     background:white;
     color:black;
 }
 
 /* footer */
-.footer{
-    height:30px;
+footer{
+    height:50px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -126,29 +132,22 @@
     font-weight:600;
 }
 
-.footer .social-links a{
+footer .social-links a{
     font-size:12px;
-    font-weight:600;
+    font-weight:500;
     color:white;
     padding-left:5px;
 }
 
-.footer .social-links a:hover{
+footer .social-links a:hover{
     text-decoration:underline;
     color:rgb(32, 134, 207);
 }
 
-/* body{
-    height:100vh;
-    width:100%;
-} */
-
-/* .main{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-} */
+footer p{
+    font-size:18px;
+    font-weight:600;
+}
 
 /* home */
 .home{
@@ -392,7 +391,7 @@ form{
 }
 
 @media(min-width:360px) {
-    .footer .social-links a{
+    footer .social-links a{
         font-size:15px;
     }
 
@@ -414,6 +413,10 @@ form{
 }
 
 @media(min-width:500px) {
+    footer p{
+        font-size:20px;
+    }
+
     .about-details{
         width:400px;
     }
@@ -434,16 +437,24 @@ form{
 
 
 @media(min-width:600px) {
-    .header .header-links a{
+    header .header-links a{
         display:inline;
     }
 
-    .header .menu-icon{
+    header .menu-icon{
         display:none;
     }
 
-    .header .sidebar-menu{
+    header .sidebar-menu{
         display:none;
+    }
+
+    footer .social-links a{
+        font-size:17px;
+    }
+
+    footer p{
+        font-size:22px; 
     }
 }
 
