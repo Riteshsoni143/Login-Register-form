@@ -31,6 +31,8 @@
             <a href="#" >Service</a>
             <a href="#" onclick="showContact(), closeSidebar()">Contact</a>
             <a href="mailto:riteshsoni35468@gmail.com">Email</a>
+            <a href="#" onclick="showHome(), closeSidebar(), showLoginCard()">Login</a>
+            <a href="#" onclick="showHome(), closeSidebar(), showRegisterCard()">Register</a>
         </div>
 
         <div id="header-login-btn">
@@ -42,7 +44,7 @@
         <div class="home" id="home">
         <div class="card" id="myElement">
             <div>
-                <span class="close_icon" onclick="hideCard()"> <ion-icon name="close-outline"></ion-icon> </span>
+                <span class="close_icon" onclick="hideCard(), closeSidebar()"> <ion-icon name="close-outline"></ion-icon> </span>
             </div>
         
             <div class="form_box login" id="login_card">
