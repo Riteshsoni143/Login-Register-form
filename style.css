@@ -459,7 +459,7 @@ form{
 }
 
 
-@media(max-height:720px) and (min-width:360px) and (max-width:500px) {
+@media(max-height:770px) and (min-width:360px) and (max-width:500px) {
     .about-details{
         margin-bottom:20px;
     }
